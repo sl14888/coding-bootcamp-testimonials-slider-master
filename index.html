@@ -27,49 +27,52 @@
       <div class="container">
         <div class="bootcamp__content">
           <div class="bootcamp__content-text">
-            <img
-              class="bootcamp__img-quotes"
-              src="./images/pattern-quotes.svg"
-              alt="quotes"
-            />
-            <div class="bootcamp__title">
-              “ I’ve been interested in coding for a while but never taken the jump, until
-              now. I couldn’t recommend this course enough. I’m now in the job of my
-              dreams and so excited about the future. ”
+            <div class="bootcamp__text bootcamp__text--active">
+              <img
+                class="bootcamp__img-quotes"
+                src="./images/pattern-quotes.svg"
+                alt="quotes"
+              />
+              <div class="bootcamp__title">
+                “ I’ve been interested in coding for a while but never taken the jump,
+                until now. I couldn’t recommend this course enough. I’m now in the job of
+                my dreams and so excited about the future. ”
+              </div>
+              <div class="bootcamp__subtitle">
+                <span class="bootcamp__subtitle-name">Tanya Sinclair</span> UX Engineer
+              </div>
             </div>
-            <div class="bootcamp__subtitle">
-              <span class="bootcamp__subtitle-name">Tanya Sinclair</span> UX Engineer
+
+            <div class="bootcamp__text">
+              <img
+                class="bootcamp__img-quotes"
+                src="./images/pattern-quotes.svg"
+                alt="quotes"
+              />
+              <div class="bootcamp__title">
+                “ If you want to lay the best foundation possible I’d recommend taking
+                this course. The depth the instructors go into is incredible. I now feel
+                so confident about starting up as a professional developer. ”
+              </div>
+              <div class="bootcamp__subtitle">
+                <span class="bootcamp__subtitle-name">John Tarkpor</span> Junior Front-end
+                Developer
+              </div>
             </div>
           </div>
 
-          <div class="bootcamp__content-text" style="display: none">
+          <div class="bootcamp__photo">
             <img
-              class="bootcamp__img-quotes"
-              src="./images/pattern-quotes.svg"
-              alt="quotes"
-            />
-            <div class="bootcamp__title">
-              “ I’ve been interested in coding for a while but never taken the jump, until
-              now. I couldn’t recommend this course enough. I’m now in the job of my
-              dreams and so excited about the future. ”
-            </div>
-            <div class="bootcamp__subtitle">
-              <span class="bootcamp__subtitle-name">Tanya Sinclair</span> UX Engineer
-            </div>
-          </div>
-
-          <div class="bootcamp__content-photo">
-            <img class="bootcamp__img" src="./images/image-tanya.jpg" alt="tanya" />
-            <img
-              class="bootcamp__img"
+              class="bootcamp__img bootcamp__img--active"
               src="./images/image-tanya.jpg"
               alt="tanya"
-              style="display: none"
             />
+            <img class="bootcamp__img" src="./images/image-john.jpg" alt="john" />
             <div class="bootcamp__switch">
               <div class="bootcamp__switch-prev">
                 <img
-                  class="bootcamp__svg-next"
+                  class="bootcamp__svg-prev"
+                  id="switchBtn"
                   src="./images/icon-prev.svg"
                   alt="btn-prev"
                 />
@@ -77,6 +80,7 @@
               <div class="bootcamp__switch-next">
                 <img
                   class="bootcamp__svg-next"
+                  id="switchBtn"
                   src="./images/icon-next.svg"
                   alt="btn-next"
                 />

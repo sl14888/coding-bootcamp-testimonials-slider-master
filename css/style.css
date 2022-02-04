@@ -23,6 +23,18 @@ html {
   box-sizing: inherit;
 }
 
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
 .attribution {
   margin-top: 30px;
   font-size: 11px;
@@ -74,10 +86,18 @@ body {
   transform: translateX(130px);
 }
 
+.bootcamp__text {
+  display: none;
+}
+
+.bootcamp__text--active {
+  display: block;
+}
+
 .bootcamp__title {
   position: relative;
   font-weight: var(--weight-light);
-  max-width: 750px;
+  max-width: 800px;
 }
 
 .bootcamp__subtitle {
@@ -116,7 +136,7 @@ body {
   bottom: -45px;
 }
 
-.bootcamp__content-photo {
+.bootcamp__photo {
   position: relative;
   display: flex;
   position: relative;
@@ -129,9 +149,17 @@ body {
 }
 
 .bootcamp__img {
+  display: none;
+  opacity: 0;
   height: auto;
   border-radius: 10px;
   box-shadow: 20px 20px 50px rgb(0 0 0 / 30%);
+}
+
+.bootcamp__img--active {
+  display: block;
+  animation: fadeInFromNone 1s ease-in-out;
+  opacity: 1;
 }
 
 .bootcamp__switch {
@@ -164,17 +192,15 @@ body {
     margin-top: 20px;
     font-size: 24px;
     order: 1;
+    transform: translateX(0);
+    text-align: center;
   }
 
   .bootcamp {
     display: block;
   }
-  .bootcamp__content-text {
-    transform: translateX(0);
-    text-align: center;
-  }
 
-  .bootcamp__content-photo {
+  .bootcamp__photo {
     padding: 10%;
   }
   .bootcamp__switch {
